@@ -1,0 +1,202 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: white;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* Common Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #172554;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+/* Quiz Box */
+.quiz-box, .joke-box {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.quiz-box h3 {
+    margin-bottom: 20px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #2563eb;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#options button:hover {
+    background-color: #dbeafe;
+}
+
+#options button:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+.correct {
+    background-color: #bbf7d0 !important;
+}
+
+.wrong {
+    background-color: #fecaca !important;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+#result, #score {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Joke Section */
+.joke-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Tablet Responsive Design */
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 18px 5%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        padding: 70px 15px;
+    }
+
+    .section {
+        padding: 45px 15px;
+    }
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .section h2 {
+        font-size: 24px;
+    }
+
+    .quiz-box, .joke-box {
+        padding: 20px;
+    }
+}
