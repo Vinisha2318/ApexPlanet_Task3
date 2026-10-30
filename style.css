@@ -103,11 +103,13 @@ nav a:hover {
 
 #options button:hover {
     background-color: #dbeafe;
+     color: black;
 }
 
 #options button:disabled {
     cursor: not-allowed;
     opacity: 0.85;
+     color: black;
 }
 
 .correct {
